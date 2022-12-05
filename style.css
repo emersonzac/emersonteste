@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.logonavbar {
+  width: 130px;
+}
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: #ffeda9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+  gap: 10px;
+}
+.titletxtheader {
+  font-size: 40px;
+  color: #b3993b;
+}
+.btnheadergroup {
+  display: flex;
+  gap: 10px;
+}
+.btnheader {
+  font-size: 16px;
+  padding: 8px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.btnheader:hover {
+  border-bottom: black;
+}
+
+.sectiontitle {
+  font-size: 26px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "maincontent" "sidebarcontent";
+  padding: 20px;
+  flex: 1 0 auto;
+}
+.maincardimg {
+  width: 100%;
+  min-height: 180px;
+  border-radius: 10px;
+}
+.sidebarcardimg {
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 10px;
+}
+.categorycard {
+  width: 480px;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0, 5s;
+  cursor: pointer;
+}
+.categorycard:hover {
+  border-color: black;
+}
+.maincontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-area: 'maincontent"';
+}
+.maincatedotytitle {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.maincategorydescription {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+}
+.sidebarcontent {
+  background-color: #fff7f7;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  grid-area: "sidebarcontent";
+  gap: 20px;
+}
+.sidebarcard {
+  width: 75%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sidebarcard:hover {
+  border-color: gainsboro;
+}
+.sidebarcardtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+.sidebarcardmaintitle {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 10px;
+}
+.titleanchor {
+  color: white;
+  text-decoration: none;
+}
